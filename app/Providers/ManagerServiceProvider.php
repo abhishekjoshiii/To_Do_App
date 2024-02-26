@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Manager\User\{UserManagerInterface,UserManager};
 
 class ManagerServiceProvider extends ServiceProvider
 {
