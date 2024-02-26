@@ -23,11 +23,7 @@ class User extends Authenticatable
 
     protected $table ='users';
     protected $primaryKey = 'id';
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-    ];
+    protected $fillable = ['name','email','password'];
 
     public function category(): HasMany
     {

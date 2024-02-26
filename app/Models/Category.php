@@ -13,11 +13,7 @@ class Category extends Model
     
     protected $table ='categories';
     protected $primaryKey = 'id';
-    protected $fillable = [
-        'name',
-        'description',
-        'user_id',
-    ];
+    protected $fillable = ['name','description','user_id'];
 
     public function user(): BelongsTo
     {
